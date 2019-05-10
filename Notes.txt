@@ -1,0 +1,12 @@
+un module est toujours une classe avec le décorateur
+@NgModule
+
+
+SystemJS est la bibliothèque par défaut choisie par Angular pour charger les modules.
+· On a besoin au minimum d'un module racine et d'un composant racine par application.
+· Le module racine se nomme par convention AppModule.
+· Le composant racine se nomme par convention AppComponent.
+· L'ordre de chargement de l'application est le suivant : index.html > main.ts >
+app.module.ts > app.component.ts.
+· Le fichier package.json initial est fourni avec des commandes prêtes à l'emploi comme la
+commande npm start, qui nous permet de démarrer notre application web

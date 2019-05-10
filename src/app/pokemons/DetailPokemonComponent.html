@@ -1,0 +1,56 @@
+<div *ngIf="pokemon" class="container">
+    <div>
+        <h2 class="center">{{ pokemon.name }}</h2>
+        <div class="row">
+            <div class="col-sm-06" [pkmnBorderCard]="blue">
+                <img [src]="pokemon.picture">
+            </div>
+            <div class="col-sm-06">
+                <div class="form-group">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr class="title">
+                                <td>Nom</td>
+                                <td><strong>{{ pokemon.name }}</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Points de vie</td>
+                                <td><strong>{{ pokemon.hp }}</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Dégâts</td>
+                                <td><strong>{{ pokemon.cp }}</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Types</td>
+                                <td>
+                                    <div *ngFor="let type of pokemon.types">
+                                        <span class="{{ type | pokemonTypeColor }}">
+                                            {{ type }}
+                                        </span>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Date de création</td>
+                                <td><em>{{ pokemon.created | date:"dd/MM/yyyy" }}</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- ... -->
+        <div class="card-action">
+            <a class="waves-effect waves-light btn" (click)="goBack()">Retour</a>
+            <a class="waves-effect waves-light btn" (click)="goEdit(pokemon)">Editer</a>
+            <a (click)="delete(pokemon)">Supprimer</a>
+        </div>
+        <!-- ... -->
+    </div>
+</div>
+<h4 *ngIf='!pokemon' class="center">
+    <pkmn-loader></pkmn-loader>
+</h4>

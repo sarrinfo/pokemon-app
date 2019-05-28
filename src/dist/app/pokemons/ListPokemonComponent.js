@@ -32,13 +32,13 @@ var ListPokemonComponent = /** @class */ (function () {
         var link = ['/pokemon', pokemon.id];
         this.router.navigate(link);
     };
+    var _a;
     ListPokemonComponent = __decorate([
         core_1.Component({
             selector: 'list-pokemon',
             templateUrl: './app/pokemons/listPokemonComponent.html'
         }),
-        __metadata("design:paramtypes", [router_1.Router,
-            pokemons_service_1.PokemonsService])
+        __metadata("design:paramtypes", [typeof (_a = typeof router_1.Router !== "undefined" && router_1.Router) === "function" ? _a : Object, pokemons_service_1.PokemonsService])
     ], ListPokemonComponent);
     return ListPokemonComponent;
 }());

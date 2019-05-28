@@ -82,9 +82,10 @@ var PokemonsService = /** @class */ (function () {
             return rxjs_1.of(result);
         };
     };
+    var _a;
     PokemonsService = __decorate([
         core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.HttpClient])
+        __metadata("design:paramtypes", [typeof (_a = typeof http_1.HttpClient !== "undefined" && http_1.HttpClient) === "function" ? _a : Object])
     ], PokemonsService);
     return PokemonsService;
 }());

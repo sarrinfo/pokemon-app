@@ -73,6 +73,7 @@ var PokemonFormComponent = /** @class */ (function () {
         var link = ['/pokemon', this.pokemon.id];
         this.router.navigate(link);
     };
+    var _a;
     __decorate([
         core_1.Input(),
         __metadata("design:type", pokemon_1.Pokemon)
@@ -83,8 +84,7 @@ var PokemonFormComponent = /** @class */ (function () {
             templateUrl: './app/pokemons/pokemon-form.component.html',
             styleUrls: ['app/pokemons/pokemon-form.component.css']
         }),
-        __metadata("design:paramtypes", [pokemons_service_1.PokemonsService,
-            router_1.Router])
+        __metadata("design:paramtypes", [pokemons_service_1.PokemonsService, typeof (_a = typeof router_1.Router !== "undefined" && router_1.Router) === "function" ? _a : Object])
     ], PokemonFormComponent);
     return PokemonFormComponent;
 }());

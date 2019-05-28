@@ -39,13 +39,13 @@ var PokemonSearchComponent = /** @class */ (function () {
         var link = ['/pokemon', pokemon.id];
         this.router.navigate(link);
     };
+    var _a;
     PokemonSearchComponent = __decorate([
         core_1.Component({
             selector: 'pokemon-search',
             templateUrl: './app/pokemons/search-pokemon.component.html',
         }),
-        __metadata("design:paramtypes", [pokemons_service_1.PokemonsService,
-            router_1.Router])
+        __metadata("design:paramtypes", [pokemons_service_1.PokemonsService, typeof (_a = typeof router_1.Router !== "undefined" && router_1.Router) === "function" ? _a : Object])
     ], PokemonSearchComponent);
     return PokemonSearchComponent;
 }());

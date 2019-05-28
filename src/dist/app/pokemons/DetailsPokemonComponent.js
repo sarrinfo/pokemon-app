@@ -44,14 +44,13 @@ var DetailPokemonComponent = /** @class */ (function () {
     DetailPokemonComponent.prototype.goBack = function () {
         this.router.navigate(['/pokemon/all']);
     };
+    var _a, _b;
     DetailPokemonComponent = __decorate([
         core_1.Component({
             selector: "detail-pokemon",
             templateUrl: "./app/pokemons/DetailPokemonComponent.html"
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute,
-            router_1.Router,
-            pokemons_service_1.PokemonsService])
+        __metadata("design:paramtypes", [typeof (_a = typeof router_1.ActivatedRoute !== "undefined" && router_1.ActivatedRoute) === "function" ? _a : Object, typeof (_b = typeof router_1.Router !== "undefined" && router_1.Router) === "function" ? _b : Object, pokemons_service_1.PokemonsService])
     ], DetailPokemonComponent);
     return DetailPokemonComponent;
 }());

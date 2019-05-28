@@ -46,12 +46,13 @@ var LoginComponent = /** @class */ (function () {
         this.authService.logout();
         this.setMessage();
     };
+    var _a;
     LoginComponent = __decorate([
         core_1.Component({
             selector: 'login',
             templateUrl: './app/login/login.component.html'
         }),
-        __metadata("design:paramtypes", [auth_service_1.AuthService, router_1.Router])
+        __metadata("design:paramtypes", [auth_service_1.AuthService, typeof (_a = typeof router_1.Router !== "undefined" && router_1.Router) === "function" ? _a : Object])
     ], LoginComponent);
     return LoginComponent;
 }());

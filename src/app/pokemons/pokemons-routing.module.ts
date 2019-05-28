@@ -16,6 +16,7 @@ const pokemonsRoutes: Routes = [
         children: [
             { path: 'add', component: AddPokemonComponent },
             { path: 'edit/:id', component: EditPokemonComponent },
+            { path: 'details/:id', component: DetailPokemonComponent },// a supprimer
             { path: ':id', component: DetailPokemonComponent }
         ]
     }

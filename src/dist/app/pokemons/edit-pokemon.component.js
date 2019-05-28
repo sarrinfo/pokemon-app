@@ -24,13 +24,13 @@ var EditPokemonComponent = /** @class */ (function () {
         this.pokemonsService.getPokemon(id)
             .subscribe(function (pokemon) { return _this.pokemon = pokemon; });
     };
+    var _a;
     EditPokemonComponent = __decorate([
         core_1.Component({
             selector: 'edit-pokemon',
             template: "\n<h2 class=\"header center\">Editer {{ pokemon?.name }}</h2>\n    <p class=\"center\">\n        <img *ngIf=\"pokemon\" [src]=\"pokemon.picture\">\n    <p>\n<pokemon-form [pokemon]=\"pokemon\"></pokemon-form>\n\n ",
         }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute,
-            pokemons_service_1.PokemonsService])
+        __metadata("design:paramtypes", [typeof (_a = typeof router_1.ActivatedRoute !== "undefined" && router_1.ActivatedRoute) === "function" ? _a : Object, pokemons_service_1.PokemonsService])
     ], EditPokemonComponent);
     return EditPokemonComponent;
 }());

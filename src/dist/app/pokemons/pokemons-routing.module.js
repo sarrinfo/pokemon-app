@@ -22,6 +22,7 @@ var pokemonsRoutes = [
         children: [
             { path: 'add', component: add_pokemon_component_1.AddPokemonComponent },
             { path: 'edit/:id', component: edit_pokemon_component_1.EditPokemonComponent },
+            { path: 'details/:id', component: detailsPokemonComponent_1.DetailPokemonComponent },
             { path: ':id', component: detailsPokemonComponent_1.DetailPokemonComponent }
         ]
     }
